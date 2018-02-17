@@ -85,20 +85,31 @@ https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
 •	Now you have everything to do this project
 
-•	Create a new .Rmd  file in your RStudio and answer the TODO sections in https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+•	Create a new .Rmd  file in your RStudio and answer the TODO sections in 
+https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
 
 Document , and the generate your RMD, MD, Write your Readme, and Generate your PDF or even World Document (As you see in follow) or HTML from your file
 
 
 
 resources for this poroject:
+
 https://rmarkdown.rstudio.com/
+
 https://git-scm.com/downloads
+
 https://nicercode.github.io/guides/reports/
+
 http://kbroman.org/knitr_knutshell/pages/markdown.html
+
 http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
+
 https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
 https://www.dataquest.io/blog/how-to-share-data-science-portfolio/
+
 https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+
 https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
