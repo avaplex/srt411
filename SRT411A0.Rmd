@@ -2,17 +2,19 @@
 title: "SRT411A0"
 author: "Ivan (Avaplex)"
 date: '2018-02-15'
-pdf_document: default
-output: github_document
-html_document: default
-word_document: default
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ## GitHub Documents
 
 This is an R Markdown format used for publishing markdown documents to GitHub.
-The R MarkDown File Generated for Git Hup automatically is available at same repository
-https://github.com/avaplex/srt411/SRT411A0.md
+The R MarkDown File Generated for Github which include the result automatically is available at same repository "SRT411A0.md"
+https://github.com/avaplex/srt411/blob/master/SRT411A0.md
+
+PDF File and HTML file also Available in this repository to Download
 
 This is an assignment from SRT411 which is for Introduction to R and Github.
 This assignment is base on the todo labs from PDF file named A very short introduction to R 
