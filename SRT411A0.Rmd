@@ -22,6 +22,7 @@ http://kbroman.org/knitr_knutshell/pages/markdown.html
 http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
 https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 
+
 ## 3.1 Calculator ToDo
 Compute the difference between 2014 and the start year at this university and divide this by the difference between 2014 and the year you were born. Multiply this with 100 to get the percentage of your life you have spent at this university.
 ```{r}
