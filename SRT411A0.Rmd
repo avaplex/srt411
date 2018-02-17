@@ -1,38 +1,43 @@
----
-title: "SRT411A0"
-author: "Ivan (Avaplex)"
-date: '2018-02-15'
-pdf_document: default
-output: github_document
-html_document: default
-word_document: default
----
+SRT411A0
+================
+Ivan (Avaplex)
+2018-02-15
 
 ## GitHub Documents
 
-This is an R Markdown format used for publishing markdown documents to GitHub. 
-This is an assignment from SRT411 which is for Introduction to R and Github.
-This assignment is base on the todo labs fro, PDF file named A-very-short-introduction-to-R  which is available in repository for download. The Short introduction to R is also available in: 
-https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
+This is an R Markdown format used for publishing markdown documents to
+GitHub. This is an assignment from SRT411 which is for Introduction to R
+and Github. This assignment is base on the todo labs fro, PDF file named
+A-very-short-introduction-to-R which is available in repository for
+download. The Short introduction to R is also available in:
+<https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf>
 
-Sources for this poroject:
-https://rmarkdown.rstudio.com/
-https://nicercode.github.io/guides/reports/
-http://kbroman.org/knitr_knutshell/pages/markdown.html
-http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
-https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
-
+Sources for this poroject: <https://rmarkdown.rstudio.com/>
+<https://nicercode.github.io/guides/reports/>
+<http://kbroman.org/knitr_knutshell/pages/markdown.html>
+<http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html>
+<https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf>
 
 ## 3.1 Calculator ToDo
-Compute the difference between 2014 and the start year at this university and divide this by the difference between 2014 and the year you were born. Multiply this with 100 to get the percentage of your life you have spent at this university.
-```{r}
+
+Compute the difference between 2014 and the start year at this
+university and divide this by the difference between 2014 and the year
+you were born. Multiply this with 100 to get the percentage of your life
+you have spent at this university.
+
+``` r
 (2016-2014)/(2014-1978)*100
 ```
 
+    ## [1] 5.555556
 
 ## 3.2 Workspace ToDo
-Repeat the previous ToDo, but with several steps in between. You can give the variables any name you want, but the name has to start with a letter
-```{r}
+
+Repeat the previous ToDo, but with several steps in between. You can
+give the variables any name you want, but the name has to start with a
+letter
+
+``` r
 seneca<-2016
 year<-1994
 born <-1978
@@ -40,58 +45,107 @@ multip <-100
 (seneca - year)/(year-born)*multip
 ```
 
+    ## [1] 137.5
+
 ## 3.4 Function ToDo
-Compute the sum of 4, 5, 8 and 11 by ???rst combining them into a vector and then using the function sum.
-```{r}
+
+Compute the sum of 4, 5, 8 and 11 by ???rst combining them into a vector
+and then using the function sum.
+
+``` r
 td34<-c(4,5,8,11)
 sum(td34)
 ```
 
+    ## [1] 28
+
 ## 3.5 Plots ToDo
+
 Plot 100 normal random numbers.
-```{r}
+
+``` r
 td35<-rnorm(100,0,1)
 plot(td35)
 ```
 
+![](SRT411A0_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
 ## 4 Help and documentation ToDo
+
 Find help for the sqrt function.
-```{r}
+
+``` r
 help(sqrt)
 ```
 
-## 5 Scripts ToDo
-Make a ???le called firstscript.R containing Rcode that generates 100 random numbers and plots them, and run this script several times.
+    ## starting httpd help server ... done
 
-```{r}
-source("firstscript.R")
-source("firstscript.R")
+## 5 Scripts ToDo
+
+Make a ???le called firstscript.R containing Rcode that generates 100
+random numbers and plots them, and run this script several times.
+
+``` r
 source("firstscript.R")
 ```
 
-## 6.2 Matrices ToDo
-Put the numbers 31 to 60 in a vector named P and in a matrix with 6 rows and 5 columns named Q. Tip: use the function seq. Look at the di???erent ways scalars, vectors and matrices are denoted in the workspace window
+![](SRT411A0_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-```{r}
+``` r
+source("firstscript.R")
+```
+
+![](SRT411A0_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+
+``` r
+source("firstscript.R")
+```
+
+![](SRT411A0_files/figure-gfm/unnamed-chunk-6-3.png)<!-- -->
+
+## 6.2 Matrices ToDo
+
+Put the numbers 31 to 60 in a vector named P and in a matrix with 6 rows
+and 5 columns named Q. Tip: use the function seq. Look at the di???erent
+ways scalars, vectors and matrices are denoted in the workspace window
+
+``` r
 P=seq(from=31,to=60,by=1)
 Q=matrix(data=c(31:60),ncol = 5,nrow = 6)
 Q
 ```
 
-## 6.3 Data Frames ToDo
-Make a script ???le which constructs three random normal vectors of length 100. Call these vectors x1, x2 and x3. Make a data frame called t with three columns (called a, b and c) containing respectively x1, x1+x2 and x1+x2+x3. Call the following functions for this data frame: plot(t) and sd(t). Can you understand the results? Rerun this script a few times.
+    ##      [,1] [,2] [,3] [,4] [,5]
+    ## [1,]   31   37   43   49   55
+    ## [2,]   32   38   44   50   56
+    ## [3,]   33   39   45   51   57
+    ## [4,]   34   40   46   52   58
+    ## [5,]   35   41   47   53   59
+    ## [6,]   36   42   48   54   60
 
-```{r}
+## 6.3 Data Frames ToDo
+
+Make a script ???le which constructs three random normal vectors of
+length 100. Call these vectors x1, x2 and x3. Make a data frame called t
+with three columns (called a, b and c) containing respectively x1, x1+x2
+and x1+x2+x3. Call the following functions for this data frame: plot(t)
+and sd(t). Can you understand the results? Rerun this script a few
+times.
+
+``` r
 x1 = rnorm(100)
 x2 = rnorm(100)
 x3 = rnorm(100)
 t = data.frame(a=x1,b=x1+x2,c=x1+x2+x3)
 plot(t)
-
 ```
-## 7 Graphics ToDo
-Add these lines to the script ???le of the previous section. Try to ???nd out, either by experimenting or by using the help, what the meaning is of rgb, the last argument of rgb, lwd, pch, cex.
-```{r}
+
+![](SRT411A0_files/figure-gfm/unnamed-chunk-8-1.png)<!-- --> \#\# 7
+Graphics ToDo Add these lines to the script ???le of the previous
+section. Try to ???nd out, either by experimenting or by using the help,
+what the meaning is of rgb, the last argument of rgb, lwd, pch, cex.
+
+``` r
 x1 = rnorm(100)
 x2 = rnorm(100)
 x3 = rnorm(100)
@@ -101,22 +155,43 @@ lines(t$b, type="s", lwd=2, col=rgb(0.3,0.4,0.3,0.9))
 points(t$c, pch=20, cex=4, col=rgb(0,0,1,0.3))
 ```
 
-RGB: Red Green Blue value of color ( first 3 column are color intensity , and last is the color alfa  work like transparency)
-Pch: S-compatible vector symbols , asci character, vector symbole, depend on value
-cex: character (or symbol) expansion: a numerical vector. This works as a multiple of par("cex").
-lwd: line width for drawing symbols see
+![](SRT411A0_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+
+RGB: Red Green Blue value of color ( first 3 column are color intensity
+, and last is the color alfa work like transparency) Pch: S-compatible
+vector symbols , asci character, vector symbole, depend on value cex:
+character (or symbol) expansion: a numerical vector. This works as a
+multiple of par(“cex”). lwd: line width for drawing symbols see
 
 ## 8 Reading and writing data files ToDo
-Make a ???le called tst1.txt in Notepad from the example in Figure 4 and store it in your working directory. Write a script to read it, to multiply the column called g by 5 and to store it as tst2.txt
-```{r}
+
+Make a ???le called tst1.txt in Notepad from the example in Figure 4 and
+store it in your working directory. Write a script to read it, to
+multiply the column called g by 5 and to store it as tst2.txt
+
+``` r
 d1<-read.table("tst1.txt",header=TRUE)
 d2<-data.frame(a=c(1,2,4,8,16,32),g=c(2,4,8,16,32,64),x=c(3,6,12,24,48,96))
 (d3<-d1*matrix(c(1,1,1,1,1,1,5,5,5,5,5,5,1,1,1,1,1,1)))
+```
+
+    ##    a   g  x
+    ## 1  1  10  3
+    ## 2  2  20  6
+    ## 3  4  40 12
+    ## 4  8  30 24
+    ## 5 16 160 48
+    ## 6 32 320 96
+
+``` r
 write.table(d3,file="tst2.txt",row.names=FALSE)
 ```
+
 ## 8.1 Reading and writing data files ToDo
+
 only storing the 2nd column in tst3.txt
-```{r}
+
+``` r
 d = read.table(file = "tst1.txt", header=TRUE)
 d1 = data.frame(a<-c(1,2,4,8,16,32),g<-c(2,4,8,16,32,64),x<-c(3,6,12,24,48,96))
 d2 <-d1$g*5
@@ -124,29 +199,47 @@ write.table(d2, file = "tst3.txt",row.names=FALSE)
 d2
 ```
 
+    ## [1]  10  20  40  80 160 320
+
 ## 9 Not Available data ToDo
-Compute the mean of the square root of a vector of 100 random numbers. What happens?
-```{r}
+
+Compute the mean of the square root of a vector of 100 random numbers.
+What happens?
+
+``` r
 td9 <- rnorm(100)
 #or td9<-c(rnorm(100))
 mean(sqrt(td9))
 ```
-"NaNs produced", some negative value is appear when generate 100 random number.To solve the problem, use script 
 
+    ## Warning in sqrt(td9): NaNs produced
+
+    ## [1] NaN
+
+“NaNs produced”, some negative value is appear when generate 100 random
+number.To solve the problem, use script
 
 ## 10.2 Dates ToDo
-Make a graph with on the x-axis: today, Sinterklaas 2014 and your next birthday and on the y-axis the number of presents you expect on each of these days. Tip: make two vectors ???rst
 
-```{r}
+Make a graph with on the x-axis: today, Sinterklaas 2014 and your next
+birthday and on the y-axis the number of presents you expect on each of
+these days. Tip: make two vectors ???rst
+
+``` r
 data1<-strptime(c("20180215","20141225","20180321"),format="%Y%m%d")
 data2=c(0,1,3)
 plot(data1,data2,xlab="Date",ylab="Presents",main="Presents I am expecting to receive")
 ```
 
+![](SRT411A0_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 ## 11.2 For-loop ToDo
-Make a vector from 1 to 100. Make a for-loop which runs through the whole vector. Multiply the elements which are smaller than 5 and larger than 90 with 10 and the other elements with 0.1
-```{r}
+
+Make a vector from 1 to 100. Make a for-loop which runs through the
+whole vector. Multiply the elements which are smaller than 5 and larger
+than 90 with 10 and the other elements with 0.1
+
+``` r
 h = seq(from=1,to=100)
 s = c()
 for(i in 1:100)
@@ -160,12 +253,27 @@ for(i in 1:100)
    }
 }
 s
-
 ```
 
+    ##   [1]   10.0   20.0   30.0   40.0    0.5    0.6    0.7    0.8    0.9    1.0
+    ##  [11]    1.1    1.2    1.3    1.4    1.5    1.6    1.7    1.8    1.9    2.0
+    ##  [21]    2.1    2.2    2.3    2.4    2.5    2.6    2.7    2.8    2.9    3.0
+    ##  [31]    3.1    3.2    3.3    3.4    3.5    3.6    3.7    3.8    3.9    4.0
+    ##  [41]    4.1    4.2    4.3    4.4    4.5    4.6    4.7    4.8    4.9    5.0
+    ##  [51]    5.1    5.2    5.3    5.4    5.5    5.6    5.7    5.8    5.9    6.0
+    ##  [61]    6.1    6.2    6.3    6.4    6.5    6.6    6.7    6.8    6.9    7.0
+    ##  [71]    7.1    7.2    7.3    7.4    7.5    7.6    7.7    7.8    7.9    8.0
+    ##  [81]    8.1    8.2    8.3    8.4    8.5    8.6    8.7    8.8    8.9    9.0
+    ##  [91]  910.0  920.0  930.0  940.0  950.0  960.0  970.0  980.0  990.0 1000.0
+
 ## 11.3 Writing your own function ToDo
-Write a function for the previous ToDo, so that you can feed it any vector you like (as argument). Use a for-loop in the function to do the computation with each element. Use the standard R function length in the speci???cation of the counter. a)
-```{r}
+
+Write a function for the previous ToDo, so that you can feed it any
+vector you like (as argument). Use a for-loop in the function to do the
+computation with each element. Use the standard R function length in the
+speci???cation of the counter. a)
+
+``` r
 k=1:10
 fun = function(arg1)
 {
@@ -185,7 +293,4 @@ fun = function(arg1)
 fun(arg1=k)
 ```
 
-
-
-
-
+    ##  [1] 10.0 20.0 30.0 40.0  0.5  0.6  0.7  0.8  0.9  1.0
