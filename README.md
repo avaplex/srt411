@@ -32,26 +32,30 @@ This is an assignment from SRT411 which is for Introduction to R and Github. Thi
 	https://github.com/git-for-windows/git/releases/
 	Or any version that is suitable for your platform
 
-•	Set up your git email by typing git config --global user.email YOUR_EMAIL. Replace YOUR_EMAIL with an email account.
+Set up your git email by typing 
+	
+	git config --global user.email YOUR_EMAIL. Replace YOUR_EMAIL with an email account.
 
-•	Set up your git name by typing git config --global user.name YOUR_NAME. Replace YOUR_NAME with your full name, like John Smith.
+Set up your git name by typing 
+	
+	git config --global user.name YOUR_NAME. Replace YOUR_NAME with your full name, like John Smith.
 
-•	Setup a Github account and a new repository using same Email
-	$https://github.com/join
+Setup a Github account and a new repository using same Email at	https://github.com/join
 
-•	Create an SSH key in GitBash ( on you computer)
+	Create an SSH key in GitBash ( on you computer)
 	$ssh-keygen -t rsa -b 4096 -C your_email@example.com
 
-•	Choose a Path and Pass phrase if necessary or just press enter to accept default
-	Ensure the ssh-agent is running: eval $(ssh-agent -s)
+	Choose a Path and Pass phrase if necessary or just press enter to accept default
+	Ensure the ssh-agent is running: 
+	eval $(ssh-agent -s)
 
-•	Add SSH Private key to your agent
+	Add SSH Private key to your agent
 	$ssh-add ~/.ssh/id_rsa
 
 You can see and read about adding the SSH key to your GitHub account using this link:
 https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
-•	Copies the contents of the id_rsa.pub file to your clipboard
+	Copies the contents of the id_rsa.pub file to your clipboard
 	$clip < ~/.ssh/id_rsa.pub
 
 Follow these steps in your github account
@@ -65,27 +69,43 @@ If prompted, confirm your GitHub password.
 Source for this steps:
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
-•	Creating a repository
+Creating a repository
+	
 	$MKDIR <Folder>
 	$CD <folder>
 	$git init
 
-•	To add a readme file for your git: $git add README.md
-	check the git status: $git status
-	When you make changes you can commit it using: $git commit -m "Initial version"
-	to add all your file to git use: $git add .
-	to commit a file: $git commit -m "Update README.md"
+To add a readme file for your git: 
 
-	to push a file / files to github
+	$git add README.md
+
+check the git status: 
+	
+	$git status
+	
+When you make changes you can commit it using: 
+
+	$git commit -m "Initial version"
+	
+to add all your file to git use: 
+
+	$git add .
+	
+to commit a file: 
+
+	$git commit -m "Update README.md"
+
+to push a file / files to github
+	
 	$ git remote add origin
 	$ git@github.com:YOUR_GITHUB_USERNAME/YOUR_GIT_REPO_NAME.git
 	$ git push -u origin master
 
-•	 (more info available here ) https://www.dataquest.io/blog/how-to-share-data-science-portfolio/
+(more info available here ) https://www.dataquest.io/blog/how-to-share-data-science-portfolio/
 
-•	Now you have everything to do this project
+Now you have everything to do this project
 
-•	Create a new .Rmd  file in your RStudio and answer the TODO sections in 
+Create a new .Rmd  file in your RStudio and answer the TODO sections in 
 https://cran.r-project.org/doc/contrib/Torfs+Brauer-Short-R-Intro.pdf
 
 Document , and the generate your RMD, MD, Write your Readme, and Generate your PDF or even World Document (As you see in follow) or HTML from your file
