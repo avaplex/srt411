@@ -1,7 +1,9 @@
 ---
+title: "SRT411A0"
+author: "Ivan"
+date: '2018-02-15'
 pdf_document: default
-output: pdf_document
-title: "Untitled"
+output: github_document
 html_document: default
 word_document: default
 ---
